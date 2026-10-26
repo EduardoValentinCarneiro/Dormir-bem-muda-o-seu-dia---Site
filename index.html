@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#102c39">
+<meta name="description" content="Guia interativo sobre qualidade do sono, com pesquisa escolar e três autoavaliações educativas.">
+<title>Hora de Descansar — Sono, saúde e bem-estar</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">☾</span>Hora de Descansar</a>
+<nav class="nav-links" id="navLinks" aria-label="Navegação principal"><a href="#sono">Por que dormir?</a><a href="#dados">Nossa pesquisa</a><a href="#questionarios">Autoavaliações</a><a href="#dicas">Hábitos</a></nav>
+<a class="nav-cta" href="#questionarios">Fazer autoavaliação ↗</a><button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid"><div class="hero-copy">
+<span class="eyebrow">Saúde • bem-estar • rotina</span><h1>Dormir bem muda o seu dia.</h1>
+<p>Entenda como seus hábitos influenciam o descanso, conheça os resultados da nossa turma e descubra pequenos passos que podem ajudar.</p>
+<div class="hero-actions"><a class="button" href="#questionarios">Começar minha autoavaliação ↓</a><a class="text-link" href="#dados">Ver pesquisa da turma ↗</a></div>
+<div class="hero-facts"><div><strong>3</strong><span>questionários rápidos</span></div><div><strong>5 min</strong><span>para refletir</span></div><div><strong>0</strong><span>respostas enviadas</span></div></div>
+</div><figure class="hero-photo"><img src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Pessoa descansando tranquilamente em uma cama" fetchpriority="high"><span class="night-stamp">UM TEMPO PARA DESACELERAR</span><figcaption>Foto: <a href="https://www.pexels.com/photo/woman-sleeping-935777/" target="_blank" rel="noreferrer">Ivan Oboleninov / Pexels</a></figcaption></figure>
+</div></section>
+<section class="section" id="sono"><div class="wrap about-grid">
+<div class="about-visual reveal"><img src="https://images.pexels.com/photos/8416429/pexels-photo-8416429.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" alt="Jovem dormindo em quarto com iluminação suave" loading="lazy"><span class="about-tag">Descanso também é cuidado com a saúde</span></div>
+<div class="reveal"><div class="section-head"><span class="eyebrow">O que acontece enquanto você dorme</span><h2>O sono faz parte do aprendizado.</h2><p>Uma boa noite ajuda o corpo a descansar e dá suporte à atenção, à memória e ao bem-estar durante o dia.</p></div>
+<div class="fact-box"><div class="fact-big">8–10 horas</div><p>Recomendação geral por noite para adolescentes de 13 a 17 anos. As necessidades individuais variam.</p></div>
+<p class="small-note">Aos 18 anos ou mais, a referência para adultos é diferente. Converse com um profissional de saúde se tiver dúvidas ou dificuldades frequentes.</p><a class="text-link" href="https://portugues.cdc.gov/sleep/about/index.html" target="_blank" rel="noreferrer">Conheça as recomendações do CDC ↗</a></div>
+</div></section>
+<section class="section data-section" id="dados"><div class="wrap data-layout">
+<div class="data-intro reveal"><span class="eyebrow">Pesquisa da turma</span><h2>O que os estudantes contaram.</h2><span class="data-count"><i></i>13 respostas anônimas</span><p>Questionário escolar de Saúde e Bem-Estar. Os dados mostram as respostas desta turma e não representam todos os estudantes.</p><p class="small-note">3º ano D • período vespertino</p></div>
+<div class="chart-list reveal" aria-label="Resultados da pesquisa">
+<div class="chart-row"><span>Usam o celular sempre antes de dormir</span><b>11 de 13 · 85%</b><div class="track"><div class="fill" style="--value:85%"></div></div></div>
+<div class="chart-row"><span>Sentem sono durante as aulas</span><b>9 de 13 · 69%</b><div class="track"><div class="fill" style="--value:69%"></div></div></div>
+<div class="chart-row"><span>Avaliam o sono como regular ou ruim</span><b>10 de 13 · 77%</b><div class="track"><div class="fill" style="--value:77%"></div></div></div>
+<div class="chart-row"><span>Não mantêm horários regulares</span><b>8 de 13 · 62%</b><div class="track"><div class="fill" style="--value:62%"></div></div></div>
+<div class="chart-row"><span>Dormem menos de 8 horas</span><b>6 de 13 · 46%</b><div class="track"><div class="fill" style="--value:46%"></div></div></div>
+<p class="data-caveat">Percentuais arredondados. Uma idade registrada como “6767” foi desconsiderada apenas na análise de idade. Fonte: formulário “Qualidade do Sono dos Estudantes”.</p>
+</div></div></section>
+<section class="section quiz-section" id="questionarios"><div class="wrap">
+<div class="quiz-intro"><div class="section-head"><span class="eyebrow">Sua vez de refletir</span><h2>Como anda sua rotina de descanso?</h2><p>Abra um questionário por vez. Responda uma pergunta de cada vez e, ao terminar, escolha se quer repetir, fechar ou seguir para o próximo. Os resultados se juntam no resumo.</p></div><aside class="privacy-note">As respostas ficam nesta página durante sua visita. Não pedimos nome e nada é enviado para um servidor.</aside></div>
+<div class="quiz-list" id="quizList"></div><section class="overall-results" id="overallResults" aria-live="polite" hidden></section></div></section>
+<dialog class="quiz-dialog" id="quizDialog" aria-labelledby="wizardTitle"></dialog>
+<section class="section" id="dicas"><div class="wrap">
+<div class="section-head reveal"><span class="eyebrow">Pequenos passos contam</span><h2>Um ritual simples para a noite.</h2><p>Não precisa mudar tudo de uma vez. Escolha uma ideia e teste por alguns dias.</p></div>
+<div class="tips-grid">
+<article class="tip reveal"><div class="tip-icon">◷</div><h3>Deixe o horário previsível</h3><p>Tente manter horários parecidos para dormir e acordar, inclusive nos fins de semana, quando for possível.</p></article>
+<article class="tip reveal"><div class="tip-icon">▣</div><h3>Dê uma pausa nas telas</h3><p>Experimente deixar o celular de lado antes de deitar e carregá-lo longe da cama, se isso funcionar para você.</p></article>
+<article class="tip reveal"><div class="tip-icon">☾</div><h3>Prepare um ambiente calmo</h3><p>Um quarto mais escuro, silencioso e confortável pode ajudar a criar um momento de desaceleração.</p></article>
+</div>
+<div class="routine reveal"><div><h3>Escolha seu primeiro passo</h3><p>Toque em uma ideia para marcar sua intenção para hoje.</p><div id="routineFeedback" class="routine-feedback" aria-live="polite"></div></div><div class="routine-choices" role="group" aria-label="Escolha um hábito para experimentar"><button data-choice="Vou deixar o celular de lado antes de dormir">Pausa nas telas</button><button data-choice="Vou tentar deitar em um horário parecido">Horário regular</button><button data-choice="Vou preparar um ambiente mais calmo">Ambiente tranquilo</button></div></div>
+</div></section>
+<section class="section faq-section" id="ajuda"><div class="wrap faq-layout"><div class="section-head"><span class="eyebrow">Perguntas frequentes</span><h2>Uma conversa que vale a pena.</h2><p>Use as respostas como ponto de partida; cada pessoa pode ter uma experiência diferente.</p></div><div class="faq-list">
+<details><summary>O resultado do questionário é um diagnóstico?</summary><p>Não. É uma ferramenta educativa de reflexão, criada para este site. Ela não avalia doenças nem substitui uma consulta.</p></details>
+<details><summary>O que faço se continuar cansado durante o dia?</summary><p>Converse com um adulto de confiança e procure orientação de um profissional de saúde se a sonolência, a dificuldade para dormir ou o cansaço persistirem e atrapalharem sua rotina.</p></details>
+<details><summary>Se durmo 8 horas, meu sono já está bom?</summary><p>As horas são apenas uma parte. Regularidade, qualidade do descanso e como você se sente durante o dia também importam. As necessidades variam com a idade e de pessoa para pessoa.</p></details>
+<details><summary>Por que a pesquisa não mostra a idade de todos?</summary><p>Uma resposta de idade estava fora de um intervalo possível e foi retirada apenas desse resumo. As demais respostas foram mantidas nas outras perguntas.</p></details>
+</div></div></section>
+<section class="sources"><div class="wrap source-grid"><div><h3>Leituras de referência</h3><a href="https://portugues.cdc.gov/sleep/about/index.html" target="_blank" rel="noreferrer">CDC — sobre o sono</a><a href="https://www.cdc.gov/healthy-schools/sleep/index.html" target="_blank" rel="noreferrer">CDC — sono na escola</a></div><div><h3>Créditos das fotografias</h3><a href="https://www.pexels.com/photo/woman-sleeping-935777/" target="_blank" rel="noreferrer">Ivan Oboleninov / Pexels</a><a href="https://www.pexels.com/photo/a-man-lying-in-bed-sleeping-8416429/" target="_blank" rel="noreferrer">SHVETS production / Pexels</a></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><b>Hora de Descansar</b><p>Projeto escolar • 3º ano D • período vespertino<br>Eduardo Valentin Carneiro · Kauan Bruno Alves de Souza · Eduardo Fernandes Araujo · Yago Gabriel Kienen</p></div><a href="#inicio">Voltar ao início ↑</a></div></footer>
+<script src="app.js" defer></script>
+</body></html>
+
+
+
+
+
